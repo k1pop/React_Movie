@@ -1,0 +1,62 @@
+.main-details {
+  margin: 20px auto;
+  width: 80%;
+
+  .acceuil {
+    text-decoration: none;
+    padding: 6px 10px 0px 10px;
+    border-radius: 8px;
+    box-shadow: $color-2 0px 3px 3px;
+  }
+  .acceuil:hover {
+    color: $color-1;
+    background-color: $color-2;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .all-details {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: $color-2 0px 3px 8px;
+
+    .details-info {
+      place-self: left;
+
+      text-align: center;
+
+      #vote-average {
+        padding: 3px 5px 0px 10px;
+        border-radius: 3px;
+        position: relative;
+        background-color: $color-2;
+      }
+    }
+
+    .details-img {
+      place-self: right;
+      text-align: right;
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  .ytb-details {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+
+    iframe {
+      height: 500px;
+      width: 100%;
+    }
+  }
+}

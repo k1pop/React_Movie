@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## ReactJs Movie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### ReactJs / Api movie
 
-## Available Scripts
+### instalation :
 
-In the project directory, you can run:
+Instalation : `npm i`
 
-### `npm start`
+### Lancement projet :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Start : `npm start`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Le Frontend :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Dans le `/src` on vas trouver les dossiers `/components`, `/pages`, `/styles`, ainsi que les fichiers `/App.js` et `/index.js`
 
-### `npm run build`
+  - Dans le dossier`/components` :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - On trouve le Footer `/Footer.js` qui est le footer de nos pages
+    - On trouve La Navbar `/NavBar.js`
+    - Enfin le fichier `/Search.js` où l'on trouve notre Input qui est dans notre NavBar cette Input nous permet de recherche un film à l'aide de sont titre et d'y accéder
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Dans le dossier `/pages` :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - On y trouve le fichier Movie `/Movie.js` qui est notre page d'aceuil où est affiché nos films trié par ordre de populatité à l'aide d'une API
+    - On y trouve le fichier DetailsMovie `/DetailsMovie.js` qui est notre page ou l'ont affiche les details d'un film cliqué ou recherché à l'aide de notre NavBar ou y trouveras une bande annonce/Synopsis/...
 
-### `npm run eject`
+  - Dans le dossier `/styles` on y trouve tous le css :
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    - Dans `/styles/components`:
+      - `_footer.scss` qui est le css du footer présent dans `../components/Footer.js`
+      - `_navbar.scss` qui est le css de la NavBar présent dans `../components/Navbar.js`
+      - `_search.scss` qui est le css de notre Input ainsi que de nos films affiché suite à la recherche `../components/Search.js`
+    - Dans `/styles/pages`: - `details.scss` qui est le css de notre page avec les details d'un films selectioné `../pages/DetailsMovie.js` - `_movie.scss` qui est le css de notre page d'aceuil ou nos film sont repertorié `../pages/Movie.js`
+    - Le fichier `_settings.css` est la ou nous mettre tous les paramettre de bases qui seront réutilisé partous dans le css
+    - Le fichier `index.scss` permet de relier tous les fichier css
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - Dans le fichier `App.js` on y trouve les routes pour accéder a tous les fichiers et comment ils seront affiché
+  - Dans le fichier `index.js` c'est notre liens entre `app.js` et `.../public/index.html`

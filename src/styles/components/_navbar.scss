@@ -1,0 +1,24 @@
+header {
+  background-color: $color-3;
+  padding: 0.5rem;
+  //   display: flex;
+  .acceuil {
+    float: left;
+    font-size: large;
+    padding: 0.2rem 0.8rem;
+    margin-top: 2px;
+    margin-left: 3%;
+    text-decoration: none;
+  }
+  .acceuil:hover {
+    color: $color-2;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    .acceuil {
+      padding-left: 3px;
+    }
+  }
+}
