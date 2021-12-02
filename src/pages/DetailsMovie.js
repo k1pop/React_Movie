@@ -51,7 +51,7 @@ const DetailsMovie = (res) => {
     return rhours + "h " + rminutes + "min.";
   };
 
-  console.log(annonces);
+  // console.log("blabla" + annonces.key);
 
   return (
     <div className="main-details">
@@ -110,15 +110,19 @@ const DetailsMovie = (res) => {
       </div>
       <div className="ytb-details">
         <h2>Bande Annonce:</h2>
-        <iframe
-          width="560"
-          height="315"
-          src={"https://www.youtube.com/embed/" + annonces.key}
-          title={details.title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        {annonces ? (
+          <iframe
+            width="560"
+            height="315"
+            src={"https://www.youtube.com/embed/" + annonces.key}
+            title={details.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        ) : (
+          <div>Bande annonce indisponible</div>
+        )}
       </div>
     </div>
   );
